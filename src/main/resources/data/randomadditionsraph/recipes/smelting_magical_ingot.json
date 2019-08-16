@@ -1,0 +1,7 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {"item": "randomadditionsraph:magical_blend"},
+    "result": "randomadditionsraph:magical_ingot",
+    "experience": 2.5,
+    "cookingtime": 200
+}

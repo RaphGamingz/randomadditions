@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {"item": "randomadditionsraph:magical_block"}
+    ],
+    "result": {
+    	"item":"randomadditionsraph:magical_ingot",
+    	"count": 9
+    }
+}

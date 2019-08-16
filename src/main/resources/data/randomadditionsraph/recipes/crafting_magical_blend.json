@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {"item": "randomadditionsraph:magical_dust"},
+        {"item":"minecraft:iron_ingot"}
+    ],
+    "result": {"item":"randomadditionsraph:magical_blend"}
+}

@@ -1,0 +1,6 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {"tag": "randomadditionsraph:magical_ore"},
+    "result": "randomadditionsraph:magical_dust",
+    "cookingtime": 100
+}

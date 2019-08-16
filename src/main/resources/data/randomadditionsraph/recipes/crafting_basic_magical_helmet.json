@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "III",
+        "I I"
+    ],
+    "key":{
+        "I": {"item": "randomadditionsraph:magical_ingot"}
+    },
+    "result": {"item":"randomadditionsraph:basic_magical_helmet"}
+}

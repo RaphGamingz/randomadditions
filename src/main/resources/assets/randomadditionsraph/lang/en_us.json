@@ -1,0 +1,27 @@
+{
+	"item.randomadditionsraph.magical_ingot": "Magical Ingot",
+	"item.randomadditionsraph.magical_blend": "Magical Blend",
+	"item.randomadditionsraph.magical_dust": "Magical Dust",
+
+	"item.randomadditionsraph.basic_magical_axe": "Basic Magical Axe",
+	"item.randomadditionsraph.basic_magical_hoe": "Basic Magical Hoe",
+	"item.randomadditionsraph.basic_magical_pickaxe": "Basic Magical Pickaxe",
+	"item.randomadditionsraph.basic_magical_shovel": "Basic Magical Shovel",
+	"item.randomadditionsraph.basic_magical_sword": "Basic Magical Sword",
+
+	"item.randomadditionsraph.basic_magical_helmet": "Basic Magical Helmet",
+	"item.randomadditionsraph.basic_magical_chestplate": "Basic Magical Chestplate",
+	"item.randomadditionsraph.basic_magical_leggings": "Basic Magical Leggings",
+	"item.randomadditionsraph.basic_magical_boots": "Basic Magical Boots",
+
+	"item.randomadditionsraph.magical_cow_egg": "Magical Cow Egg",
+	"item.randomadditionsraph.magical_pig_egg": "Magical Pig Egg",
+	
+	"block.randomadditionsraph.magical_block": "Magical Block",
+	"block.randomadditionsraph.magical_ore": "Magical Ore",
+	
+	"entity.randomadditionsraph.magical_cow": "Magical Cow",
+	"entity.randomadditionsraph.magical_pig": "Magical Pig",
+	
+	"itemGroup.Random Additions": "Random Additions"
+}
