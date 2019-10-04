@@ -27,4 +27,6 @@ public class ModItems {
 	//Block
 	public static Item magical_block;
 	public static Item magical_ore;
+	
+	public static Item magical_generator;
 }

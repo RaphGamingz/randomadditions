@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "III",
+        "IFI",
+        "III"
+    ],
+    "key":{
+        "I": {"item": "randomadditionsraph:magical_ingot"},
+        "F": {"item": "minecraft:furnance"}
+    },
+    "result": {"item":"randomadditionsraph:magical_generator"}
+}

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=north": { "model": "randomadditionsraph:block/magical_generator" },
+        "facing=south": { "model": "randomadditionsraph:block/magical_generator", "y": 180 },
+        "facing=west": { "model": "randomadditionsraph:block/magical_generator", "y": 270 },
+        "facing=east": { "model": "randomadditionsraph:block/magical_generator", "y": 90 },
+        "facing=up": { "model": "randomadditionsraph:block/magical_generator", "x": -90 },
+        "facing=down": { "model": "randomadditionsraph:block/magical_generator", "x": 90 }
+    }
+}

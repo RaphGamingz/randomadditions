@@ -19,9 +19,13 @@
 	
 	"block.randomadditionsraph.magical_block": "Magical Block",
 	"block.randomadditionsraph.magical_ore": "Magical Ore",
+
+	"block.randomadditionsraph.magical_generator": "Magical Generator",
 	
 	"entity.randomadditionsraph.magical_cow": "Magical Cow",
 	"entity.randomadditionsraph.magical_pig": "Magical Pig",
+	
+	"biome.randomadditionsraph.magical_biome": "Magical Land",
 	
 	"itemGroup.Random Additions": "Random Additions"
 }
