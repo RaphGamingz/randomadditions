@@ -1,10 +1,16 @@
 {
     "variants": {
-        "facing=north": { "model": "randomadditionsraph:block/magical_generator" },
-        "facing=south": { "model": "randomadditionsraph:block/magical_generator", "y": 180 },
-        "facing=west": { "model": "randomadditionsraph:block/magical_generator", "y": 270 },
-        "facing=east": { "model": "randomadditionsraph:block/magical_generator", "y": 90 },
-        "facing=up": { "model": "randomadditionsraph:block/magical_generator", "x": -90 },
-        "facing=down": { "model": "randomadditionsraph:block/magical_generator", "x": 90 }
+        "facing=north,powered=false": { "model": "randomadditionsraph:block/magical_generator" },
+        "facing=south,powered=false": { "model": "randomadditionsraph:block/magical_generator", "y": 180 },
+        "facing=west,powered=false": { "model": "randomadditionsraph:block/magical_generator", "y": 270 },
+        "facing=east,powered=false": { "model": "randomadditionsraph:block/magical_generator", "y": 90 },
+        "facing=up,powered=false": { "model": "randomadditionsraph:block/magical_generator", "x": -90 },
+        "facing=down,powered=false": { "model": "randomadditionsraph:block/magical_generator", "x": 90 },
+        "facing=north,powered=true": { "model": "randomadditionsraph:block/magical_generator_powered" },
+        "facing=south,powered=true": { "model": "randomadditionsraph:block/magical_generator_powered", "y": 180 },
+        "facing=west,powered=true": { "model": "randomadditionsraph:block/magical_generator_powered", "y": 270 },
+        "facing=east,powered=true": { "model": "randomadditionsraph:block/magical_generator_powered", "y": 90 },
+        "facing=up,powered=true": { "model": "randomadditionsraph:block/magical_generator_powered", "x": -90 },
+        "facing=down,powered=true": { "model": "randomadditionsraph:block/magical_generator_powered", "x": 90 }
     }
 }
