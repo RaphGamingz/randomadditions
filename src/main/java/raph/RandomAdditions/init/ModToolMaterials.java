@@ -5,7 +5,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 
 public enum ModToolMaterials implements IItemTier {
-	Basic_Magical_Tool(10.0f, 9.0f, 1500, 3, 25, ModItems.magical_ingot);
+	Basic_Magical_Tool(10.0f, 9.0f, 1500, 3, 25, ModItems.magical_ingot),
+	Terra_Tool(12.0f, 10.0f, 1650, 3, 30, ModItems.terrasteel);
 	
 	private float attackDamage, efficiency;
 	private int durability, harvestLevel, enchantability;

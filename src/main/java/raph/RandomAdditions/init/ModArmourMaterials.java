@@ -9,7 +9,8 @@ import net.minecraft.util.SoundEvent;
 import raph.RandomAdditions.RandomAdditions;
 
 public enum ModArmourMaterials implements IArmorMaterial {
-	Basic_Magical_Armour("basicmagical", 30, new int[] {8, 9, 10, 7}, 25, ModItems.magical_ingot, "entity.skeleton.hurt", 0.0f);
+	Basic_Magical_Armour("basicmagical", 30, new int[] {8, 9, 10, 7}, 25, ModItems.magical_ingot, "entity.skeleton.hurt", 0.0f),
+	Terra_Armour("terra", 40, new int[] {8, 9, 10, 7}, 30, ModItems.terrasteel, "entity.skeleton.hurt", 1.0f);
 	
 	private static final int[] max_damage_array = new int[]{13, 15, 16, 11};
 	private String name, equipSound;

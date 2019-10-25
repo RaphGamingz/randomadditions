@@ -17,15 +17,22 @@ public class Config {
 	public static final ForgeConfigSpec CLIENT_CONFIG;
 	
 	static {
+		SERVER_BUILDER.comment("Ore Generation");
 		OregenConfig.init(SERVER_BUILDER, CLIENT_BUILDER);
-		
+		SERVER_BUILDER.comment("Power");
+		PowerConfig.init(SERVER_BUILDER, CLIENT_BUILDER);
+				
 		SERVER_CONFIG = SERVER_BUILDER.build();
 		CLIENT_CONFIG = CLIENT_BUILDER.build();
 	}
 	
 	public static void loadConfig(ForgeConfigSpec config, String path) {
 		RandomAdditions.LOGGER.info("Loading config: " + path);
-		final CommentedFileConfig file = CommentedFileConfig.builder(new File(path)).sync().autosave().writingMode(WritingMode.REPLACE).build();
+		final CommentedFileConfig file = CommentedFileConfig.builder(new File(path))
+				.sync()
+				.autosave()
+				.writingMode(WritingMode.REPLACE)
+				.build();
 		RandomAdditions.LOGGER.info("Built config: " + path);
 		file.load();
 		RandomAdditions.LOGGER.info("Loaded config: " + path);

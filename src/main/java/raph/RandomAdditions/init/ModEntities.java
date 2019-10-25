@@ -10,17 +10,22 @@ import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraftforge.event.RegistryEvent;
 import raph.RandomAdditions.ModRegistries;
 import raph.RandomAdditions.RandomAdditions;
+import raph.RandomAdditions.entities.MagicalChest;
 import raph.RandomAdditions.entities.MagicalCow;
 import raph.RandomAdditions.entities.MagicalPig;
+import raph.RandomAdditions.entities.TerraSpirit;
 
 public class ModEntities {
 	public static EntityType<?> MAGICAL_COW = EntityType.Builder.create(MagicalCow::new, EntityClassification.CREATURE).build(RandomAdditions.MODID + ":magical_cow").setRegistryName(ModRegistries.location("magical_cow"));
 	public static EntityType<?> MAGICAL_PIG = EntityType.Builder.create(MagicalPig::new, EntityClassification.CREATURE).build(RandomAdditions.MODID + ":magical_pig").setRegistryName(ModRegistries.location("magical_pig"));
-
+	public static EntityType<?> MAGICAL_CHEST = EntityType.Builder.create(MagicalChest::new, EntityClassification.CREATURE).build(RandomAdditions.MODID + ":magical_chest").setRegistryName(ModRegistries.location("magical_chest"));
+	public static EntityType<?> TERRA_SPIRIT = EntityType.Builder.create(TerraSpirit::new, EntityClassification.CREATURE).build(RandomAdditions.MODID + ":terra_spirit").setRegistryName(ModRegistries.location("terra_spirit"));
+	
 	public static void registerEntitySpawnEggs(final RegistryEvent.Register<Item> event) {
 		event.getRegistry().registerAll(
 			ModItems.magical_cow_egg = registerEntitySpawnEgg(MAGICAL_COW, 0x0077ff, 0x7fbbff, "magical_cow_egg"),
-			ModItems.magical_pig_egg = registerEntitySpawnEgg(MAGICAL_PIG, 0xadadad, 0x03bafc, "magical_pig_egg")
+			ModItems.magical_pig_egg = registerEntitySpawnEgg(MAGICAL_PIG, 0xadadad, 0x03bafc, "magical_pig_egg"),
+			ModItems.magical_chest_egg = registerEntitySpawnEgg(MAGICAL_CHEST, 0xadadad, 0x03bafc, "magical_chest_egg")
 		);
 	}
 	
@@ -35,6 +40,12 @@ public class ModEntities {
 				Biomes.FOREST, Biomes.BIRCH_FOREST, Biomes.FLOWER_FOREST, 
 				Biomes.JUNGLE, Biomes.BAMBOO_JUNGLE, 
 				Biomes.TAIGA, Biomes.MOUNTAINS);
+		registerEntityWorldSpawn(MAGICAL_CHEST,
+				Biomes.PLAINS, Biomes.SUNFLOWER_PLAINS, 
+				Biomes.FOREST, Biomes.BIRCH_FOREST, Biomes.FLOWER_FOREST, 
+				Biomes.JUNGLE, Biomes.BAMBOO_JUNGLE, 
+				Biomes.TAIGA, Biomes.MOUNTAINS,
+				Biomes.DESERT, Biomes.DESERT_HILLS);
 	}
 	
 	public static Item registerEntitySpawnEgg(EntityType<?> type, int color1, int color2, String name) {
