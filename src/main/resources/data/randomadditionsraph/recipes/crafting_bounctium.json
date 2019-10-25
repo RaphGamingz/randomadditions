@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "TTT",
+        "OSO",
+        "MMM"
+    ],
+    "key":{
+        "M": {"item": "randomadditionsraph:terra_drop"},
+        "T": {"item": "randomadditionsraph:magical_dust"},
+        "S": {"item": "minecraft:slime"},
+        "O": {"tag": "forge:dyes/orange"}
+    },
+    "result": {"item":"randomadditionsraph:bounctium"}
+}

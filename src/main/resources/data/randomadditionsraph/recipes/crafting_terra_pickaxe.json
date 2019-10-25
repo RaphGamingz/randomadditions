@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "III",
+        " S ",
+        " S "
+    ],
+    "key":{
+        "I": {"item": "randomadditionsraph:terrasteel"},
+        "S": {"item": "minecraft:stick"}
+    },
+    "result": {"item":"randomadditionsraph:terra_pickaxe"}
+}

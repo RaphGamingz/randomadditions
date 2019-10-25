@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "III",
+        "I I"
+    ],
+    "key":{
+        "I": {"item": "randomadditionsraph:terrasteel"}
+    },
+    "result": {"item":"randomadditionsraph:terra_helmet"}
+}

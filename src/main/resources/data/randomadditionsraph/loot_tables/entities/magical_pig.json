@@ -35,10 +35,10 @@
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Enchantments:[{id:looting, lvl:1000}]}"
+							"tag": "{Enchantments:[{id:looting, lvl:2}]}"
 						}
 					],
-					"name": "randomadditionsraph:magical_sword",
+					"name": "randomadditionsraph:basic_magical_sword",
 					"weight": 10
 				}
 			]

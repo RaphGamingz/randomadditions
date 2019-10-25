@@ -3,8 +3,8 @@
 	"pools":[
 		{
 			"rolls": {
-				"min": 1,
-				"max": 4
+				"min": 2,
+				"max": 6
 			},
 			"bonus_rolls": 2,
 			"entries":[
@@ -31,14 +31,33 @@
 						},
 						{
 							"function": "minecraft:set_name",
-							"name": "The Sword Of Randomness"
+							"name": "The Sword Of Everything"
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Enchantments:[{id:sharpness, lvl:1000}]}"
+							"tag": "{Enchantments:[{id:looting, lvl:2}, {id:sharpness, lvl:100}]}"
 						}
 					],
 					"name": "randomadditionsraph:basic_magical_sword",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"functions":[
+						{
+							"function": "minecraft:set_damage",
+							"damage": 0.01
+						},
+						{
+							"function": "minecraft:set_name",
+							"name": "The Helmet Of Breathing"
+						},
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{Enchantments:[{id:water_breathing, lvl:1}]}"
+						}
+					],
+					"name": "randomadditionsraph:basic_magical_helmet",
 					"weight": 10
 				}
 			]

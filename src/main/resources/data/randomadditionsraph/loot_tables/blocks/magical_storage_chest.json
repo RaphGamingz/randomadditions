@@ -6,7 +6,7 @@
 			"entries":[
 				{
 					"type": "minecraft:item",
-					"name": "randomadditionsraph:magical_generator",
+					"name": "randomadditionsraph:magical_storage_chest",
 					"functions": [
 						{
 							"function": "minecraft:copy_name",
@@ -19,11 +19,6 @@
 								{
 									"source": "inv",
 									"target": "BlockEntityTag.inv",
-									"op": "replace"
-								},
-								{
-									"source": "energy",
-									"target": "BlockEntityTag.energy",
 									"op": "replace"
 								}
 							]

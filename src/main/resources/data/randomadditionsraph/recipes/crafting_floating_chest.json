@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "DDD",
+        "DCD",
+        "DDD"
+    ],
+    "key":{
+        "D": {"item": "randomadditionsraph:magical_dust"},
+        "C": {"item": "minecraft:chest"}
+    },
+    "result": {"item":"randomadditionsraph:floating_chest"}
+}

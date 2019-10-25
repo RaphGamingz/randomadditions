@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {"item": "randomadditionsraph:magical_ingot"},
+        {"item":"randomadditionsraph:terra_drop"}      
+    ],
+    "result": {"item":"randomadditionsraph:terrasteel"}
+}

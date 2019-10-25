@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "DDD",
+        "DAD",
+        "DDD"
+    ],
+    "key":{
+        "D": {"item": "randomadditionsraph:magical_dust"},
+        "A": {"item": "minecraft:apple"}
+    },
+    "result": {"item":"randomadditionsraph:magical_apple"}
+}
