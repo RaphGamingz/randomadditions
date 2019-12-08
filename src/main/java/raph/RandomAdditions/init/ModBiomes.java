@@ -9,7 +9,7 @@ public class ModBiomes {
 	public static Biome magical_biome;
 	
 	public static void registerBiomes() {
-		registerBiome(magical_biome, Type.PLAINS, Type.RARE);
+		registerBiome(magical_biome, Type.PLAINS, Type.DENSE, Type.MAGICAL);
 	}
 	
 	public static void registerBiome(Biome biome, Type... types) {

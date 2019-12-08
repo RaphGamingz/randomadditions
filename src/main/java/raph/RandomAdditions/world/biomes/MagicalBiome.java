@@ -16,7 +16,7 @@ public class MagicalBiome extends Biome {
 
 	public MagicalBiome() {
 		super((new Biome.Builder())
-			.surfaceBuilder(new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.IRON_ORE.getDefaultState(), ModBlocks.magical_ore.getDefaultState())))
+			.surfaceBuilder(new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.STONE.getDefaultState(), ModBlocks.magical_ore.getDefaultState())))
 			.category(Category.PLAINS)
 			.scale(0.2f)
 			.precipitation(RainType.SNOW)
@@ -32,7 +32,7 @@ public class MagicalBiome extends Biome {
 		
 		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(ModEntities.MAGICAL_COW, 200, 2, 10));
 		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(ModEntities.MAGICAL_PIG, 200, 2, 10));
-	
+
 		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
 		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
 		this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));

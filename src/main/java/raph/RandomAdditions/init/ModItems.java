@@ -14,6 +14,9 @@ public class ModItems {
 	public static Item terra_drop;
 	public static Item terrasteel;
 	
+	public static Item pig_iron;
+	public static Item coal_dust;
+
 	//Food
 	public static Item magical_apple;
 	public static Item candy;
@@ -31,6 +34,9 @@ public class ModItems {
 	public static Item terra_pickaxe;
 	public static Item terra_shovel;
 	public static Item terra_sword;
+	
+	public static Item magical_shield;
+	public static Item invisiblity_cloak;
 	
 	//Armour
 	public static Item basic_magical_helmet;
@@ -57,6 +63,8 @@ public class ModItems {
 	
 	public static Item magical_generator;
 	public static Item magical_storage_chest;
+	
+	public static Item ghost_block;
 	
 	//Custom
 	public static Item floating_chest;

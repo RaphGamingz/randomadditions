@@ -23,6 +23,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import raph.RandomAdditions.customBlocks.Bounctium;
 import raph.RandomAdditions.customBlocks.TerraAltar;
+import raph.RandomAdditions.customBlocks.ghostBlock.GhostBlock;
+import raph.RandomAdditions.customBlocks.ghostBlock.GhostBlockTile;
 import raph.RandomAdditions.customBlocks.magicalGenerator.MagicalGenerator;
 import raph.RandomAdditions.customBlocks.magicalGenerator.MagicalGeneratorContainer;
 import raph.RandomAdditions.customBlocks.magicalGenerator.MagicalGeneratorTile;
@@ -38,6 +40,8 @@ import raph.RandomAdditions.init.ModItems;
 import raph.RandomAdditions.init.ModToolMaterials;
 import raph.RandomAdditions.items.CustomAxeItem;
 import raph.RandomAdditions.items.CustomPickaxeItem;
+import raph.RandomAdditions.items.CustomShieldItem;
+import raph.RandomAdditions.items.InvisibilityCloak;
 import raph.RandomAdditions.items.ToolTippedItem;
 import raph.RandomAdditions.items.floatingChest.FloatingChest;
 import raph.RandomAdditions.items.floatingChest.FloatingChestContainer;
@@ -61,6 +65,9 @@ public class ModRegistries {
 			ModItems.terra_drop = new ToolTippedItem(properties, "Very Terraful", "Or Is It", "Very Terrable").setRegistryName(location("terra_drop")),
 			ModItems.terrasteel = new Item(properties).setRegistryName(location("terrasteel")),
 			
+			ModItems.pig_iron = new Item(properties).setRegistryName(location("pig_iron")),
+			ModItems.coal_dust = new Item(properties).setRegistryName(location("coal_dust")),
+
 			//Food
 			ModItems.magical_apple = new Item(properties.food(ModFoods.magical_apple)).setRegistryName("magical_apple"),
 			ModItems.candy = new Item(properties.food(ModFoods.lolly)).setRegistryName("candy"),
@@ -79,6 +86,8 @@ public class ModRegistries {
 			ModItems.terra_shovel = new ShovelItem(ModToolMaterials.Terra_Tool, -3, -2, properties).setRegistryName(location("terra_shovel")),
 			ModItems.terra_sword = new SwordItem(ModToolMaterials.Terra_Tool, 0, -2, properties).setRegistryName(location("terra_sword")),
 			
+			ModItems.magical_shield = new CustomShieldItem(properties, 500, ModItems.magical_dust).setRegistryName(location("magical_shield")),
+			
 			//Armour
 			ModItems.basic_magical_helmet = new ArmorItem(ModArmourMaterials.Basic_Magical_Armour, EquipmentSlotType.HEAD, properties).setRegistryName(location("basic_magical_helmet")),
 			ModItems.basic_magical_chestplate = new ArmorItem(ModArmourMaterials.Basic_Magical_Armour, EquipmentSlotType.CHEST, properties).setRegistryName(location("basic_magical_chestplate")),
@@ -89,16 +98,20 @@ public class ModRegistries {
 			ModItems.terra_chestplate = new ArmorItem(ModArmourMaterials.Terra_Armour, EquipmentSlotType.CHEST, properties).setRegistryName(location("terra_chestplate")),
 			ModItems.terra_leggings = new ArmorItem(ModArmourMaterials.Terra_Armour, EquipmentSlotType.LEGS, properties).setRegistryName(location("terra_leggings")),
 			ModItems.terra_boots = new ArmorItem(ModArmourMaterials.Terra_Armour, EquipmentSlotType.FEET, properties).setRegistryName(location("terra_boots")),
-	
+			
+			ModItems.invisiblity_cloak = new InvisibilityCloak(),
+			
 			//Item Blocks
 			ModItems.magical_block = new BlockItem(ModBlocks.magical_block, properties).setRegistryName(ModBlocks.magical_block.getRegistryName()),
 			ModItems.magical_ore = new BlockItem(ModBlocks.magical_ore, properties).setRegistryName(ModBlocks.magical_ore.getRegistryName()),
 			
 			ModItems.terra_altar = new BlockItem(ModBlocks.terra_altar, properties).setRegistryName(ModBlocks.terra_altar.getRegistryName()),
 			ModItems.bounctium = new BlockItem(ModBlocks.bounctium, properties).setRegistryName(ModBlocks.bounctium.getRegistryName()),
-		
+			
 			ModItems.magical_generator = new BlockItem(ModBlocks.magical_generator, properties).setRegistryName(ModBlocks.magical_generator.getRegistryName()),
 			ModItems.magical_storage_chest = new BlockItem(ModBlocks.magical_storage_chest, properties).setRegistryName(ModBlocks.magical_storage_chest.getRegistryName()),
+			
+			ModItems.ghost_block = new BlockItem(ModBlocks.ghost_block, properties).setRegistryName(ModBlocks.ghost_block.getRegistryName()),
 			
 			//Custom Item
 			ModItems.floating_chest = new FloatingChest()
@@ -118,7 +131,9 @@ public class ModRegistries {
 			ModBlocks.bounctium = new Bounctium(),
 		
 			ModBlocks.magical_generator = new MagicalGenerator(),
-			ModBlocks.magical_storage_chest = new StorageChest()
+			ModBlocks.magical_storage_chest = new StorageChest(),
+			
+			ModBlocks.ghost_block = new GhostBlock()
 		);
 		RandomAdditions.LOGGER.info("Blocks registered");
 	}
@@ -126,7 +141,8 @@ public class ModRegistries {
 	public static void registerEntityTiles(final RegistryEvent.Register<TileEntityType<?>> event) {
 		event.getRegistry().registerAll(
 			TileEntityType.Builder.create(MagicalGeneratorTile::new, ModBlocks.magical_generator).build(null).setRegistryName(ModBlocks.magical_generator.getRegistryName()),
-			TileEntityType.Builder.create(StorageChestTile::new, ModBlocks.magical_storage_chest).build(null).setRegistryName(ModBlocks.magical_storage_chest.getRegistryName())
+			TileEntityType.Builder.create(StorageChestTile::new, ModBlocks.magical_storage_chest).build(null).setRegistryName(ModBlocks.magical_storage_chest.getRegistryName()),
+			TileEntityType.Builder.create(GhostBlockTile::new, ModBlocks.ghost_block).build(null).setRegistryName(ModBlocks.ghost_block.getRegistryName())
 		);
 	}
 	@SubscribeEvent

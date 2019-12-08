@@ -10,8 +10,10 @@ import raph.RandomAdditions.RandomAdditions;
 
 public enum ModArmourMaterials implements IArmorMaterial {
 	Basic_Magical_Armour("basicmagical", 30, new int[] {8, 9, 10, 7}, 25, ModItems.magical_ingot, "entity.skeleton.hurt", 0.0f),
-	Terra_Armour("terra", 40, new int[] {8, 9, 10, 7}, 30, ModItems.terrasteel, "entity.skeleton.hurt", 1.0f);
+	Terra_Armour("terra", 40, new int[] {8, 9, 10, 7}, 30, ModItems.terrasteel, "entity.skeleton.hurt", 1.0f),
 	
+	Special_Armour("special", 50, new int[] {8, 9, 10, 7}, 40, ModItems.magical_dust, "entity.skeleton.hurt", 1.5f);
+
 	private static final int[] max_damage_array = new int[]{13, 15, 16, 11};
 	private String name, equipSound;
 	private int durability, enchantability;

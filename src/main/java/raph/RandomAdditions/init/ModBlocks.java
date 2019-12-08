@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.registries.ObjectHolder;
+import raph.RandomAdditions.customBlocks.ghostBlock.GhostBlock;
 import raph.RandomAdditions.customBlocks.magicalGenerator.MagicalGenerator;
 import raph.RandomAdditions.customBlocks.magicalGenerator.MagicalGeneratorContainer;
 import raph.RandomAdditions.customBlocks.magicalGenerator.MagicalGeneratorTile;
@@ -29,4 +30,8 @@ public class ModBlocks {
 	public static TileEntityType<StorageChestTile> magical_storage_chest_tile;
 	@ObjectHolder("randomadditionsraph:magical_storage_chest")
 	public static ContainerType<StorageChestContainer> magical_storage_chest_container;
+	
+	public static GhostBlock ghost_block;
+	@ObjectHolder("randomadditionsraph:ghost_block")
+	public static TileEntityType<StorageChestTile> ghost_block_tile;
 }
