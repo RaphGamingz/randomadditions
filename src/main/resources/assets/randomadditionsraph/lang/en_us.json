@@ -6,6 +6,9 @@
 	"item.randomadditionsraph.terra_drop": "Drop Of Terra",
 	"item.randomadditionsraph.terrasteel": "Terrasteel",
 
+	"item.randomadditionsraph.coal_dust": "Coal Dust",
+	"item.randomadditionsraph.pig_iron": "Pig Iron",
+
 	"item.randomadditionsraph.magical_apple": "Magical Apple",
 	"item.randomadditionsraph.candy": "Candy",
 	"item.randomadditionsraph.coffee": "Coffee",
@@ -21,6 +24,10 @@
 	"item.randomadditionsraph.terra_pickaxe": "Terra Pickaxe",
 	"item.randomadditionsraph.terra_shovel": "Terra Shovel",
 	"item.randomadditionsraph.terra_sword": "Terra Sword",
+
+	"item.randomadditionsraph.magical_shield": "Magical Shield",
+
+	"item.randomadditionsraph.invisibility_cloak": "Invisibility Cloak",
 
 	"item.randomadditionsraph.basic_magical_helmet": "Basic Magical Helmet",
 	"item.randomadditionsraph.basic_magical_chestplate": "Basic Magical Chestplate",
@@ -46,6 +53,7 @@
 
 	"block.randomadditionsraph.magical_generator": "Magical Generator",
 	"block.randomadditionsraph.magical_storage_chest": "Magical Chest",
+	"block.randomadditionsraph.ghost_block": "Ghost Block",
 	
 	"entity.randomadditionsraph.magical_cow": "Magical Cow",
 	"entity.randomadditionsraph.magical_pig": "Magical Pig",
