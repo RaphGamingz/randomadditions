@@ -7,7 +7,7 @@
     ],
     "key":{
         "I": {"item": "randomadditionsraph:magical_ingot"},
-        "F": {"item": "minecraft:furnace"}
+        "F": {"item": "minecraft:bedrock"}
     },
     "result": {"item":"randomadditionsraph:magical_generator"}
 }

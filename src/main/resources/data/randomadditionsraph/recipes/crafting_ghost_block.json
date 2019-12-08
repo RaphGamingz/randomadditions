@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "OMO",
+        "TCT",
+        "OMO"
+    ],
+    "key":{
+        "T": {"item": "randomadditionsraph:terrasteel"},
+        "M": {"item": "randomadditionsraph:magical_blend"},
+        "C": {"item": "randomadditionsraph:coal_dust"},
+        "O": {"item": "minecraft:cobblestone"}
+    },
+    "result": {"item":"randomadditionsraph:ghost_block"}
+}

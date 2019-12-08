@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        " C ",
+        "MWM",
+        " M "
+    ],
+    "key":{
+        "C": {"item": "randomadditionsraph:coal_dust"},
+        "W": {"item": "minecraft:white_wool"},
+        "M": {"item": "randomadditionsraph:magical_dust"}
+    },
+    "result": {"item":"randomadditionsraph:invisibility_cloak"}
+}

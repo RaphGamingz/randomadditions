@@ -2,14 +2,14 @@
     "type": "minecraft:crafting_shaped",
     "pattern":[
         "TTT",
-        "OSO",
-        "MMM"
+        "MSM",
+        "LTL"
     ],
     "key":{
-        "T": {"item": "randomadditionsraph:terra_drop"},
+        "T": {"item": "randomadditionsraph:magical_ingot"},
         "M": {"item": "randomadditionsraph:magical_dust"},
-        "S": {"item": "minecraft:slime"},
-        "O": {"tag": "forge:dyes/orange"}
+        "S": {"item": "minecraft:stone"},
+        "L": {"item": "minecraft:stone_slab"}
     },
     "result": {"item":"randomadditionsraph:bounctium"}
 }

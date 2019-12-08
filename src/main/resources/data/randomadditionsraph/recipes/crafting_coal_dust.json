@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {"item": "minecraft:coal"}        
+    ],
+    "result": {"item":"randomadditionsraph:coal_dust",
+        "count": 9
+    }
+}

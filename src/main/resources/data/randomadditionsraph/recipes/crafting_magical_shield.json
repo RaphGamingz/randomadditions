@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        " D ",
+        "DSD",
+        " M "
+    ],
+    "key":{
+        "M": {"item": "randomadditionsraph:magical_ingot"},
+        "D": {"item": "randomadditionsraph:magical_dust"},
+        "S": {"item": "minecraft:shield"}
+    },
+    "result": {"item":"randomadditionsraph:magical_shield"}
+}

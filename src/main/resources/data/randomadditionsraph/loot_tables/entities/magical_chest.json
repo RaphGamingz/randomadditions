@@ -26,6 +26,34 @@
 					"type": "minecraft:item",
 					"functions":[
 						{
+							"function": "minecraft:set_count",
+							"count":{
+								"min": 1,
+								"max": 5
+							}
+						}
+					],
+					"name": "randomadditionsraph:coal_dust",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"functions":[
+						{
+							"function": "minecraft:set_count",
+							"count":{
+								"min": 1,
+								"max": 5
+							}
+						}
+					],
+					"name": "randomadditionsraph:pig_iron",
+					"weight": 50
+				},
+				{
+					"type": "minecraft:item",
+					"functions":[
+						{
 							"function": "minecraft:set_damage",
 							"damage": 0.01
 						},
@@ -50,14 +78,14 @@
 						},
 						{
 							"function": "minecraft:set_name",
-							"name": "The Helmet Of Breathing"
+							"name": "The Boot Of Floating"
 						},
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{Enchantments:[{id:water_breathing, lvl:1}]}"
+							"tag": "{Enchantments:[{id:feather_falling, lvl:100}]}"
 						}
 					],
-					"name": "randomadditionsraph:basic_magical_helmet",
+					"name": "randomadditionsraph:basic_magical_boots",
 					"weight": 10
 				}
 			]
