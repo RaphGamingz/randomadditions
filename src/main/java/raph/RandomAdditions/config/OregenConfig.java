@@ -11,7 +11,7 @@ public class OregenConfig {
 		
 		chance = server
 				.comment("Maximum number of ore veins of magical ore that can spawn in one chunk")
-				.defineInRange("oregen.chance", 100, 1, 500);
+				.defineInRange("oregen.chance", 20, 1, 40);
 		generate_overworld = server
 				.comment("Decide if you want magical ore to spawn in the overworld")
 				.define("oregen.generate_overworld", true);

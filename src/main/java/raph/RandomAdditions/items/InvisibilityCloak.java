@@ -26,7 +26,7 @@ public class InvisibilityCloak extends ArmorItem {
 	@Override
 	public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
 		if(player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem() == ModItems.invisiblity_cloak) {
-			player.addPotionEffect(new EffectInstance(Effects.INVISIBILITY));
+			player.addPotionEffect(new EffectInstance(Effects.INVISIBILITY, 2, 100));
 		}
 	}
 }

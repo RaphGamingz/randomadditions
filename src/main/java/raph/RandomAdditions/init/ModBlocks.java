@@ -18,6 +18,7 @@ public class ModBlocks {
 	
 	public static Block terra_altar;
 	public static Block bounctium;
+	public static Block fusion_core;
 	
 	public static MagicalGenerator magical_generator;
 	@ObjectHolder("randomadditionsraph:magical_generator")

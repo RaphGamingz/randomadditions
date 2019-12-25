@@ -17,11 +17,13 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
+import net.minecraftforge.common.ModDimension;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import raph.RandomAdditions.customBlocks.Bounctium;
+import raph.RandomAdditions.customBlocks.FusionCore;
 import raph.RandomAdditions.customBlocks.TerraAltar;
 import raph.RandomAdditions.customBlocks.ghostBlock.GhostBlock;
 import raph.RandomAdditions.customBlocks.ghostBlock.GhostBlockTile;
@@ -31,9 +33,11 @@ import raph.RandomAdditions.customBlocks.magicalGenerator.MagicalGeneratorTile;
 import raph.RandomAdditions.customBlocks.magicalStorageChest.StorageChest;
 import raph.RandomAdditions.customBlocks.magicalStorageChest.StorageChestContainer;
 import raph.RandomAdditions.customBlocks.magicalStorageChest.StorageChestTile;
+import raph.RandomAdditions.dimension.MagicalModDimension;
 import raph.RandomAdditions.init.ModArmourMaterials;
 import raph.RandomAdditions.init.ModBiomes;
 import raph.RandomAdditions.init.ModBlocks;
+import raph.RandomAdditions.init.ModDimensions;
 import raph.RandomAdditions.init.ModEntities;
 import raph.RandomAdditions.init.ModFoods;
 import raph.RandomAdditions.init.ModItems;
@@ -129,6 +133,7 @@ public class ModRegistries {
 			
 			ModBlocks.terra_altar = new TerraAltar(),
 			ModBlocks.bounctium = new Bounctium(),
+			ModBlocks.fusion_core = new FusionCore(),
 		
 			ModBlocks.magical_generator = new MagicalGenerator(),
 			ModBlocks.magical_storage_chest = new StorageChest(),
@@ -178,6 +183,11 @@ public class ModRegistries {
 		);
 		ModBiomes.registerBiomes();
 	}
+	
+	@SubscribeEvent
+    public static void registerModDimensions(final RegistryEvent.Register<ModDimension> event) {
+        event.getRegistry().register(new MagicalModDimension().setRegistryName(ModDimensions.DIMENSION_ID));
+    }
 	
 	public static ResourceLocation location(String name) {
 		return new ResourceLocation(RandomAdditions.MODID, name);

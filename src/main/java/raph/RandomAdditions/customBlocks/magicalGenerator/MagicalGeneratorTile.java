@@ -157,7 +157,7 @@ public class MagicalGeneratorTile extends TileEntity implements ITickableTileEnt
             return handler.cast();
         }
         if (cap == CapabilityEnergy.ENERGY) {
-        	return energy.cast(); 
+        	return energy.cast();
         }
         return super.getCapability(cap, side);
     }

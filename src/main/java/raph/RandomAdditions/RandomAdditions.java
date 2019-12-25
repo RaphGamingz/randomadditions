@@ -24,7 +24,8 @@ public class RandomAdditions {
 	public static RandomAdditions instance;
 	public static final String MODID = "randomadditionsraph";
 	public static final Logger LOGGER = LogManager.getLogger(MODID);
-	public static final ItemGroup CUSTOMITEMGROUP = new CustomItemGroup();
+	public static final ModSetup MODSETUP = new ModSetup();
+	public static final ItemGroup CUSTOMITEMGROUP = MODSETUP.itemGroup;
 	
 	public static IProxy Proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
 	
@@ -45,6 +46,7 @@ public class RandomAdditions {
 	
 	private void setup(final FMLCommonSetupEvent event) {
 		OreGeneration.setupOreGeneration();
+		MODSETUP.init();
 		Proxy.init();
 		LOGGER.info("setup method registered");
 	}
