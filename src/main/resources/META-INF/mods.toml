@@ -2,7 +2,7 @@ modLoader="javafml" #mandatory
 loaderVersion="[28,)" #mandatory (24 is current forge version)
 [[mods]] #mandatory
 modId="randomadditionsraph" #mandatory
-version="0.1.0" #mandatory
+version="0.1.3" #mandatory
 displayName="Random Additions" #mandatory
 credits="Thanks for forge" #optional
 authors="Raph" #optional
