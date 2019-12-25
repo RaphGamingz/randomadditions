@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":[
+        "DCD",
+        "CDC",
+        "DCD"
+    ],
+    "key":{
+        "D": {"item": "randomadditionsraph:coal_dust"},
+        "C": {"item": "randomadditionsraph:magical_dust"}
+    },
+    "result": {"item":"minecraft:iron_ore"}
+}

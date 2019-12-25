@@ -11,5 +11,5 @@
         "S": {"item": "minecraft:stone"},
         "L": {"item": "minecraft:stone_slab"}
     },
-    "result": {"item":"randomadditionsraph:bounctium"}
+    "result": {"item":"randomadditionsraph:terra_altar"}
 }

@@ -8,7 +8,7 @@
     "key":{
         "T": {"item": "randomadditionsraph:terra_drop"},
         "M": {"item": "randomadditionsraph:magical_dust"},
-        "S": {"item": "minecraft:slime"},
+        "S": {"item": "minecraft:slime_ball"},
         "O": {"tag": "forge:dyes/orange"}
     },
     "result": {"item":"randomadditionsraph:bounctium"}
